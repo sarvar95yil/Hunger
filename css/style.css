@@ -1,0 +1,515 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    /* max-width: 1440px; */
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+/* HEADER */
+.header {
+    height: 800px;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/header-bg.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 80px;
+    
+}
+
+.wheel {
+    margin-top: 25px;
+}
+
+.nav-link {
+    padding: 41px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 80px;
+    margin-top: 150px;
+    position: relative;
+}
+
+.main-title {
+    font-family: 'Banny Round';
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 96px;
+    margin: 0 80px;
+    order: 1;
+    text-align: center;
+    width: 1000px;
+    height: 140px;
+}
+
+.main-title:after {
+    display: flex;
+    margin: auto;
+    content: "";
+    width: 60px;
+    height: 5px;
+    background: #E8C300;
+    border-radius: 50px;
+}
+
+.nav-buttons {
+    position: relative;
+    flex-wrap: wrap;
+    order: 4;
+    margin: auto;
+    margin-top: 36px;
+}
+
+.button {
+font-weight: bold;
+font-size: 12px;
+line-height: 20px;
+padding: 20px 0;
+width: 200px;
+background-color: transparent;
+color: #FFFFFF;
+border: none;
+border-radius: 5px;
+background: #E8C300;
+margin-right: 20px;
+}
+
+.button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.down-button {
+order: 7;
+margin: auto;
+font-weight: 900;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #333333;
+background-color: #fff;
+border-radius: 50%;
+margin-top: 82px;
+}
+
+.main-subtitle {
+    flex-basis: 100%;
+    text-align-last: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    margin: auto;
+}
+
+.work-time {
+    order: 0;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    top: 106px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    order: 2;
+    position: absolute;
+    right: 0px;
+    top: 28px;
+}
+
+.brands {
+    font-size: 20px;
+    line-height: 23px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.brands:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/*  ABOUT */
+
+.about, .team, .booking, .contacts {
+    margin: 100px 80px;
+    color: #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-text {
+    margin-right: 80px;
+}
+.about-title, .team-title{
+    font-family: 'Banny Round';
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-title:after, .team-title:after {
+    display: flex;
+    margin: auto;
+    content: "";
+    width: 60px;
+    height: 5px;
+    background: #E8C300;
+    border-radius: 50px;
+}
+
+.about-us-text-title, .team-us-text-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.about-us-text-description, .team-us-text-description {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.about-photo, .team-photo {
+    display: flex;
+    align-items:center;
+    position: relative;
+}
+
+.about-img, .our-team-img {
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+    margin-right: 125px;
+}
+
+.squeare {
+    position: absolute;
+    right: 0px;
+    width: 250px;
+    height: 250px;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+}
+
+/*  TEAM */
+.team {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/specialty-bg.png);
+    height: 675px;
+    background-size: cover;
+    margin: 100px 0;
+}    
+
+.team-text {
+    color: white;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.our-team-img {
+    margin-right: 0;
+    margin-left: 225px;
+}
+
+.team .squeare {
+    left: 100px;
+}
+
+/* BOOKING */
+.booking {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    justify-content: space-around;
+}
+
+.booking .about-text {
+    width: 509px;   
+}
+
+.booking-time {
+    margin: 0;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.input-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 565px;
+
+}
+
+.input-button {
+    flex-basis: 50%;
+}
+
+.specialties {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/slider-bg.png);
+    height: 675px;
+    background-size: cover;
+    margin: 100px 0;
+    margin-top: 0;
+} 
+
+/* MENU */
+.menu .about-title {
+margin-bottom: 0;
+}
+
+.menu .about-text {
+    color: #000;
+    margin-right: 0;
+}
+
+.menu .about-us-text-title {
+    max-width: 565px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.menu-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.menu-navigation-items {
+    width: 120px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #333333;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px 0;
+}
+
+.menu-navigation-items:not(:last-child) {
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.visible {
+    display: flex;
+}
+.food-menu {
+    padding: 0;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 80px 100px 80px;
+    font-family: 'Banny Round';
+    font-size: 18px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.visible {
+    display: flex;
+}
+
+.food-menu-group {
+padding: 0;
+}
+
+.food-menu-items {
+    list-style: none;
+}
+.food-menu-items-description {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    font-size: 0.7em;
+}
+.food-menu-items-description:not(:last-child) {
+    padding-bottom: 30px ;
+}
+
+/* EVENTS */ 
+
+.private-events {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: url(../img/events-bg.png);
+    /* background-size: cover; */
+}
+
+.event-group {
+    display: flex;
+    flex-wrap: nowrap   ;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 205px;
+}
+
+.event-img {
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+}
+
+.event-card {
+    position: relative;
+}
+
+.event-title {
+    position: absolute;
+    margin: 0;
+    padding: 34px 0;
+    width: 100.2%;
+    background: #000;
+    transform: rotate(90deg);
+    top: 198px;
+    right: -199px;
+    font-family: 'Banny Round';
+    font-size: 24px;
+    line-height: 12px;
+    text-indent: 20px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    width: 100%;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 43px 0;
+}
+
+.event-weddings{
+    margin-right: 80px;
+}
+.event-coorporate {
+    position: relative;
+}
+.event-coorporate .squeare {
+    right: -125px;
+    top: 125px; 
+}
+
+.event-coorporate .event-title {
+    transform: rotate(270deg);
+    left: -199px;
+}
+
+.event-weddings {
+    position: relative;
+}
+.event-weddings .squeare {
+    left: -125px;
+    top: 125px;
+}
+
+.contact-form {
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 42px 0;
+}
+
+/* GALERIE */
+
+.hover {
+    transition: 1s;
+}
+
+.hover:hover {
+    transform: scale(1.2);
+    z-index: 33;
+}
+
+/* CONTACTS */
+.contacts {
+    display: block;
+}
+
+.contacts .about-us-text-title {
+    max-width: 565px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between  ;
+}
+
+.input-form {
+    margin-top: 50px;
+    flex-basis: 33%;
+    background-color: #e5e5e5;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.input-form:last-child {
+    flex-basis: 100%;
+    margin-top: 10px;
+    padding-bottom: 81px;
+}
+
