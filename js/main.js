@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   // document.event.preventDefault();
       
-var mySwiper = new Swiper('#specialites ',  {
+var mySwiper = new Swiper('#specialties ',  {
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
@@ -19,7 +19,7 @@ var mySwiper = new Swiper('#specialites ',  {
 var mySwiper = new Swiper('#galerie', {
   watchSlidesProgress: true,
   watchSlidesVisibility: true,
-  slidesPerView: 4,
+  slidesPerView: 5.3,
   spaceBetween: 0,
   loop: false,
   // mousewheel: {
