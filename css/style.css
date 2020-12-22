@@ -513,9 +513,21 @@ padding: 0;
     padding-bottom: 81px;
 }
 .adress-block {
-    display: block;
+    display: flex;
     font-size: 14px;
-    fn
+    font-weight: 700;
+    line-height: 14px;
+    color: rgba(51,51,51,0.5);
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.adress-block .button {
+    width: 40%;
+    margin-right: 0;
 }
 .adress {
     display: inline-block;
@@ -527,4 +539,9 @@ padding: 0;
 
 .contact-us i {
     color: #E8C300;
+}
+
+.contact-us a {
+    color: rgba(51,51,51,0.5);
+    text-decoration: none;
 }
