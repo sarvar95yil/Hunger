@@ -526,7 +526,7 @@ padding: 0;
 }
 
 .adress-block .button {
-    width: 40%;
+    width: 50%;
     margin-right: 0;
 }
 .adress {
@@ -539,9 +539,41 @@ padding: 0;
 
 .contact-us i {
     color: #E8C300;
+    margin-right: 5px;
 }
 
 .contact-us a {
     color: rgba(51,51,51,0.5);
     text-decoration: none;
+}
+
+/* MAP */
+
+.map {
+    overflow:hidden;
+    position:relative;
+    height: 475px;
+}
+.map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* FOOTER */
+.footer {
+    height: 100px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer span {
+   color: rgba(255, 255, 255, 0.5);
+   font-size: 12px;
+   line-height: 12px;
+   margin: auto;
 }
