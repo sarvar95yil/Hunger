@@ -1,0 +1,29 @@
+@media (max-width: 1368px) {
+    .main {
+        margin-top: 75px;
+    }
+
+    .team {
+        margin-bottom: 0;
+    }
+
+    .booking {
+        margin-top: 50px;
+    }
+
+    .menu-navigation {
+        margin-top: 10px;
+    }
+
+    .food-menu {
+        margin-top: 15px;
+    }
+
+    .food-menu-items-description:not(:last-child) {
+        padding-bottom: 20px;
+    }
+
+    .adress-block .button {
+        width: 40%;
+    }
+}
