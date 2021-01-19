@@ -38,18 +38,29 @@
     }
 
     .food-menu-items {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 1090px) {
+
+    .team, .about, .booking, #specialities, .private-events {
+        height: 100%;
+    }
+
+    .about, .booking, #specialities, .menu,
+
+    .header {
+        height: 70vh;
+    }
+
     .main-title {
         font-size: 60px;
     }
 
 
     .booking .about-text {
-        width: 21%;
+        width: 30%;
     }
    
     .event-weddings {
@@ -65,13 +76,105 @@
         max-height: 350px;
     }
 
+    .team-text, .about-text {
+        max-height: 350px;
+    }
+
     .squeare {
         width: 184px;
         height: 184px;
         right: 30px;
     }
 
-    .team .square {
+    .team .squeare {
         left: 130px;
+    }
+
+    .event-title {
+        top: 135px;
+        right: 135px;
+    }
+
+    .event-coorporate .event-title{
+        left: 135px;
+    }
+}
+@media(max-width: 900px) {
+    
+    .squeare {
+        display: none;
+    }
+
+    .about-title, .team-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .about-img {
+        margin-right: 0px;
+    }
+
+    .our-team-img {
+        margin-left: 50px;
+    }
+
+    .about-title, .team-title {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .about-us-text-title, .team-us-text-title {
+        font-size: 14px ;
+        line-height: 20px;
+    }
+
+    .food-menu-items {
+        font-size: 12px;
+    }
+
+    .food-menu-items-description {
+        font-size: 0.6em;
+    }
+
+    .input-form:nth-child(4) {
+        padding-bottom: 40px;
+    }
+
+    .adress-block {
+        font-size: 0.7em;
+    }
+
+    .adress-block .button {
+        padding: 10px;
+    }
+
+    .about-us-text-title {
+        margin-bottom: 0;
+    }
+
+    .input-form {
+        padding: 10px;
+    }
+}
+
+@media(max-width: 776px) {
+
+   
+    
+    
+    
+    img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .about-title, .team-title {
+       font-size: 20px;
+       line-height: 30px; 
+    }
+
+    .about-us-text-title, .about-us-text-description, .team-us-text-title, .team-us-text-description {
+        font-size: 12px;
+        line-height: 16px;
     }
 }

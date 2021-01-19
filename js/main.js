@@ -2,8 +2,7 @@
 $(document).ready(function () {
 
 
-  const downButton = document.getElementById('down-button');
-  // document.event.preventDefault();
+
       
 var mySwiper = new Swiper('#specialties ',  {
     autoplay: {
@@ -21,7 +20,7 @@ var mySwiper = new Swiper('#specialties ',  {
 var mySwiper = new Swiper('#galerie', {
   watchSlidesProgress: true,
   watchSlidesVisibility: true,
-  slidesPerView: window.innerWidth/360,
+  slidesPerView: (window.innerWidth/350) + 0.1,
   spaceBetween: 0,
   loop: true,
   // mousewheel: {
@@ -47,7 +46,7 @@ var mySwiper = new Swiper('#galerie', {
       $(activeContent).toggleClass('visible');          
   });
   
-  // downButton.addEventListener('click', href = "#about")
+  
 });
 
 
